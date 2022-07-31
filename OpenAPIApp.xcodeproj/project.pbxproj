@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		B16FD18628967FAC00C00307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD18528967FAC00C00307 /* AppDelegate.swift */; };
 		B16FD18828967FAC00C00307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD18728967FAC00C00307 /* SceneDelegate.swift */; };
-		B16FD18A28967FAC00C00307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD18928967FAC00C00307 /* ViewController.swift */; };
+		B16FD18A28967FAC00C00307 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD18928967FAC00C00307 /* HomeViewController.swift */; };
 		B16FD18D28967FAC00C00307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16FD18B28967FAC00C00307 /* Main.storyboard */; };
 		B16FD18F28967FAE00C00307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16FD18E28967FAE00C00307 /* Assets.xcassets */; };
 		B16FD19228967FAE00C00307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16FD19028967FAE00C00307 /* LaunchScreen.storyboard */; };
+		B16FD1A528968E2600C00307 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD1A428968E2600C00307 /* EventViewController.swift */; };
+		B16FD1A728968E3A00C00307 /* MovieTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD1A628968E3A00C00307 /* MovieTalkViewController.swift */; };
+		B16FD1A928968E5B00C00307 /* FastOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD1A828968E5B00C00307 /* FastOrderViewController.swift */; };
+		B16FD1AB28968E6600C00307 /* GiftShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FD1AA28968E6600C00307 /* GiftShopViewController.swift */; };
+		C49C5570C20A1FF39C82D85F /* Pods_OpenAPIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55736CC1A0B462ECFCE1646 /* Pods_OpenAPIApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A55736CC1A0B462ECFCE1646 /* Pods_OpenAPIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAPIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16FD18228967FAC00C00307 /* OpenAPIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAPIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16FD18528967FAC00C00307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16FD18728967FAC00C00307 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B16FD18928967FAC00C00307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B16FD18928967FAC00C00307 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B16FD18C28967FAC00C00307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B16FD18E28967FAE00C00307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B16FD19128967FAE00C00307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B16FD19328967FAE00C00307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16FD1A428968E2600C00307 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		B16FD1A628968E3A00C00307 /* MovieTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTalkViewController.swift; sourceTree = "<group>"; };
+		B16FD1A828968E5B00C00307 /* FastOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastOrderViewController.swift; sourceTree = "<group>"; };
+		B16FD1AA28968E6600C00307 /* GiftShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftShopViewController.swift; sourceTree = "<group>"; };
+		B25B4984F6E043E9C65D8715 /* Pods-OpenAPIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAPIApp.release.xcconfig"; path = "Target Support Files/Pods-OpenAPIApp/Pods-OpenAPIApp.release.xcconfig"; sourceTree = "<group>"; };
+		C76AC9BE791B36CD3470C827 /* Pods-OpenAPIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAPIApp.debug.xcconfig"; path = "Target Support Files/Pods-OpenAPIApp/Pods-OpenAPIApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49C5570C20A1FF39C82D85F /* Pods_OpenAPIApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				B16FD18428967FAC00C00307 /* OpenAPIApp */,
 				B16FD18328967FAC00C00307 /* Products */,
+				E0CA65990D2DF9AB71394292 /* Pods */,
+				E42C301219C62C7BD5C01F0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,36 @@
 		B16FD18428967FAC00C00307 /* OpenAPIApp */ = {
 			isa = PBXGroup;
 			children = (
+				B16FD19328967FAE00C00307 /* Info.plist */,
+				B16FD19028967FAE00C00307 /* LaunchScreen.storyboard */,
 				B16FD18528967FAC00C00307 /* AppDelegate.swift */,
 				B16FD18728967FAC00C00307 /* SceneDelegate.swift */,
-				B16FD18928967FAC00C00307 /* ViewController.swift */,
-				B16FD18B28967FAC00C00307 /* Main.storyboard */,
 				B16FD18E28967FAE00C00307 /* Assets.xcassets */,
-				B16FD19028967FAE00C00307 /* LaunchScreen.storyboard */,
-				B16FD19328967FAE00C00307 /* Info.plist */,
+				B16FD18B28967FAC00C00307 /* Main.storyboard */,
+				B16FD18928967FAC00C00307 /* HomeViewController.swift */,
+				B16FD1A428968E2600C00307 /* EventViewController.swift */,
+				B16FD1A628968E3A00C00307 /* MovieTalkViewController.swift */,
+				B16FD1AA28968E6600C00307 /* GiftShopViewController.swift */,
+				B16FD1A828968E5B00C00307 /* FastOrderViewController.swift */,
 			);
 			path = OpenAPIApp;
+			sourceTree = "<group>";
+		};
+		E0CA65990D2DF9AB71394292 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C76AC9BE791B36CD3470C827 /* Pods-OpenAPIApp.debug.xcconfig */,
+				B25B4984F6E043E9C65D8715 /* Pods-OpenAPIApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E42C301219C62C7BD5C01F0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A55736CC1A0B462ECFCE1646 /* Pods_OpenAPIApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16FD19628967FAE00C00307 /* Build configuration list for PBXNativeTarget "OpenAPIApp" */;
 			buildPhases = (
+				3A225B987459A3FB6BC32E2D /* [CP] Check Pods Manifest.lock */,
 				B16FD17E28967FAC00C00307 /* Sources */,
 				B16FD17F28967FAC00C00307 /* Frameworks */,
 				B16FD18028967FAC00C00307 /* Resources */,
+				AD59906C9B44E01529948737 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +171,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A225B987459A3FB6BC32E2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenAPIApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD59906C9B44E01529948737 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenAPIApp/Pods-OpenAPIApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenAPIApp/Pods-OpenAPIApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenAPIApp/Pods-OpenAPIApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B16FD17E28967FAC00C00307 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16FD18A28967FAC00C00307 /* ViewController.swift in Sources */,
+				B16FD18A28967FAC00C00307 /* HomeViewController.swift in Sources */,
+				B16FD1A528968E2600C00307 /* EventViewController.swift in Sources */,
+				B16FD1AB28968E6600C00307 /* GiftShopViewController.swift in Sources */,
+				B16FD1A728968E3A00C00307 /* MovieTalkViewController.swift in Sources */,
+				B16FD1A928968E5B00C00307 /* FastOrderViewController.swift in Sources */,
 				B16FD18628967FAC00C00307 /* AppDelegate.swift in Sources */,
 				B16FD18828967FAC00C00307 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +366,7 @@
 		};
 		B16FD19728967FAE00C00307 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C76AC9BE791B36CD3470C827 /* Pods-OpenAPIApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +395,7 @@
 		};
 		B16FD19828967FAE00C00307 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25B4984F6E043E9C65D8715 /* Pods-OpenAPIApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
