@@ -16,3 +16,6 @@ let homeBannerTop: [Banner] = [
     Banner(bammerImage: UIImage(named: "bg_homeBanner")!)
 ]
     
+let homeBannerMiddle: [Banner] = [
+    Banner(bammerImage: UIImage(named: "bg_homebannerMiddle")!)
+]

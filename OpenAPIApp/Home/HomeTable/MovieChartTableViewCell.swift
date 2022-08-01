@@ -78,10 +78,7 @@ extension MovieChartTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieChartCollectionViewCell", for: indexPath) as! MovieChartCollectionViewCell
 
-        print(moviesImageArray.count)
         self.moviesImageArray = self.moviesImageArray.sorted(by: {$0.rank < $1.rank})
-        print(moviesArray[indexPath.row].movieNm)
-
         DispatchQueue.global().async {
             if self.moviesImageArray.count == self.moviesArray.count {
                 var tempImg : UIImage
@@ -108,7 +105,7 @@ extension MovieChartTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 160, height: 300)
+        return CGSize(width: 160, height: 340)
     }
 }
 

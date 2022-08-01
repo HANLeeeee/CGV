@@ -9,6 +9,7 @@ import UIKit
 
 class BannerTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageViewBanner: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

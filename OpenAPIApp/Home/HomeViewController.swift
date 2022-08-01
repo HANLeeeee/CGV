@@ -33,13 +33,15 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return homeBannerTop.count
-        }else {
+            return 1
+        } else if section == 1 {
+            return 1
+        } else {
             return 1
         }
     }
@@ -48,8 +50,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         
         switch indexPath.section {
-        case 0:
+        case 0, 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "BannerTableViewCell", for: indexPath) as! BannerTableViewCell
+            
+            if indexPath.section == 0 {
+                cell.imageViewBanner.image = homeBannerTop[indexPath.row].bammerImage
+            } else {
+                cell.imageViewBanner.image = homeBannerMiddle[indexPath.row].bammerImage
+            }
             
             cell.selectionStyle = .none
             return cell
@@ -71,7 +79,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return getRatio(tableView, homeBannerTop[indexPath.row].bammerImage)
             
         case 1:
-            return 360
+            return 380
+            
+        case 2:
+            return getRatio(tableView, homeBannerMiddle[indexPath.row].bammerImage)
             
         default:
             return UITableView.automaticDimension
