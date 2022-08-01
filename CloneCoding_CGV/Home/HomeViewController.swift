@@ -79,7 +79,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return getRatio(tableView, homeBannerTop[indexPath.row].bammerImage)
             
         case 1:
-            return 380
+            return 440
             
         case 2:
             return getRatio(tableView, homeBannerMiddle[indexPath.row].bammerImage)
