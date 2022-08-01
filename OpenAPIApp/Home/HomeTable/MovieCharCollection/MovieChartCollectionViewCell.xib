@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieChartCollectionViewCell" id="gTV-IL-0wX" customClass="MovieChartCollectionViewCell" customModule="OpenAPIApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="316"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="316"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKg-vI-ClQ">
+                        <rect key="frame" x="65" y="0.0" width="160" height="316"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynX-FY-P6f">
+                                <rect key="frame" x="0.0" y="10" width="160" height="213.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ynX-FY-P6f" secondAttribute="height" multiplier="3:4" id="8Te-bm-XbP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한산-용의 출현" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sz0-dv-QMK">
+                                <rect key="frame" x="35.5" y="233.5" width="89" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q91-Yt-lQd">
+                                <rect key="frame" x="40" y="266.5" width="80" height="28.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="지금예매">
+                                    <backgroundConfiguration key="background" cornerRadius="20">
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q91-Yt-lQd" firstAttribute="centerX" secondItem="KKg-vI-ClQ" secondAttribute="centerX" id="2Em-li-by4"/>
+                            <constraint firstItem="ynX-FY-P6f" firstAttribute="width" secondItem="KKg-vI-ClQ" secondAttribute="width" id="3yb-wf-sQA"/>
+                            <constraint firstItem="q91-Yt-lQd" firstAttribute="width" secondItem="ynX-FY-P6f" secondAttribute="width" multiplier="0.5" id="7vY-s2-DaW"/>
+                            <constraint firstAttribute="width" constant="160" id="EVh-j0-oQ7"/>
+                            <constraint firstItem="sz0-dv-QMK" firstAttribute="centerX" secondItem="KKg-vI-ClQ" secondAttribute="centerX" id="HCH-Od-OH8"/>
+                            <constraint firstItem="ynX-FY-P6f" firstAttribute="top" secondItem="KKg-vI-ClQ" secondAttribute="top" constant="10" id="QG6-wI-GBb"/>
+                            <constraint firstItem="ynX-FY-P6f" firstAttribute="centerX" secondItem="KKg-vI-ClQ" secondAttribute="centerX" id="Xzs-Ho-BBu"/>
+                            <constraint firstItem="sz0-dv-QMK" firstAttribute="top" secondItem="ynX-FY-P6f" secondAttribute="bottom" constant="10" id="dpY-cc-TAy"/>
+                            <constraint firstItem="q91-Yt-lQd" firstAttribute="top" secondItem="sz0-dv-QMK" secondAttribute="bottom" constant="15" id="hBy-qX-qTK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="KKg-vI-ClQ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="1Vm-h7-W2n"/>
+                <constraint firstItem="KKg-vI-ClQ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="EiQ-5o-cyg"/>
+                <constraint firstAttribute="bottom" secondItem="KKg-vI-ClQ" secondAttribute="bottom" id="tIw-gD-zLy"/>
+            </constraints>
+            <size key="customSize" width="290" height="316"/>
+            <connections>
+                <outlet property="imageviewMovie" destination="ynX-FY-P6f" id="p3O-Ok-PVz"/>
+                <outlet property="labelMovieTitle" destination="sz0-dv-QMK" id="q5f-c1-hYl"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="115.17857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="449" id="KGk-i7-Jjw" customClass="MovieChartTableViewCell" customModule="OpenAPIApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="449"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="449"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-L2-Wse">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="449"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mo-yj-BmN">
+                                <rect key="frame" x="20" y="0.0" width="397" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fVm-hb-qTU">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무비차트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3m-JM-jCs">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상영예정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8k0-uT-FNB">
+                                                <rect key="frame" x="82.5" y="0.0" width="62.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-ox-2u8">
+                                        <rect key="frame" x="315.5" y="9.5" width="81.5" height="31"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="전체보기" imagePadding="5">
+                                            <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Wjk-ox-2u8" secondAttribute="trailing" id="2uP-0r-ccg"/>
+                                    <constraint firstItem="fVm-hb-qTU" firstAttribute="top" secondItem="1mo-yj-BmN" secondAttribute="top" id="5uo-Dd-zvG"/>
+                                    <constraint firstItem="fVm-hb-qTU" firstAttribute="leading" secondItem="1mo-yj-BmN" secondAttribute="leading" id="SMU-vI-dyX"/>
+                                    <constraint firstAttribute="height" constant="50" id="Viu-2d-5HM"/>
+                                    <constraint firstItem="Wjk-ox-2u8" firstAttribute="centerY" secondItem="1mo-yj-BmN" secondAttribute="centerY" id="m97-vw-Tbq"/>
+                                    <constraint firstAttribute="bottom" secondItem="fVm-hb-qTU" secondAttribute="bottom" id="tgg-jK-4X9"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MovieChartTableViewCell" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aXH-gG-7eh">
+                                <rect key="frame" x="0.0" y="50" width="427" height="399"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aLV-L3-0rw">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1mo-yj-BmN" secondAttribute="trailing" constant="10" id="AKT-4o-962"/>
+                            <constraint firstAttribute="trailing" secondItem="aXH-gG-7eh" secondAttribute="trailing" id="Ewn-Lr-xiu"/>
+                            <constraint firstAttribute="bottom" secondItem="aXH-gG-7eh" secondAttribute="bottom" id="Jxu-9t-MRe"/>
+                            <constraint firstItem="1mo-yj-BmN" firstAttribute="top" secondItem="rN9-L2-Wse" secondAttribute="top" id="Qkf-gG-3TQ"/>
+                            <constraint firstItem="1mo-yj-BmN" firstAttribute="leading" secondItem="rN9-L2-Wse" secondAttribute="leading" constant="20" id="fyt-3z-O2t"/>
+                            <constraint firstItem="aXH-gG-7eh" firstAttribute="top" secondItem="1mo-yj-BmN" secondAttribute="bottom" id="o4t-MK-Q2v"/>
+                            <constraint firstItem="aXH-gG-7eh" firstAttribute="leading" secondItem="rN9-L2-Wse" secondAttribute="leading" id="uR3-hL-feZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rN9-L2-Wse" secondAttribute="bottom" id="3DY-Wo-IqQ"/>
+                    <constraint firstItem="rN9-L2-Wse" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5sA-TO-PLX"/>
+                    <constraint firstAttribute="trailing" secondItem="rN9-L2-Wse" secondAttribute="trailing" id="9c0-la-ieI"/>
+                    <constraint firstItem="rN9-L2-Wse" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Yat-pH-hcg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="aXH-gG-7eh" id="u4q-Ca-Wwt"/>
+            </connections>
+            <point key="canvasLocation" x="209.42028985507247" y="256.13839285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
