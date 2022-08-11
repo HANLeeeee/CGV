@@ -1,6 +1,6 @@
 //
 //  MovieChartTableViewCell.swift
-//  OpenAPIApp
+//  CGV
 //
 //  Created by 최하늘 on 2022/07/31.
 //

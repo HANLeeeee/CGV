@@ -1,6 +1,6 @@
 //
 //  PageViewController.swift
-//  OpenAPIApp
+//  CGV
 //
 //  Created by 최하늘 on 2022/08/01.
 //
